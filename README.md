@@ -1,5 +1,3 @@
-Here is the corrected markdown code block with the extensions updated from `.jpg` to `.png` for all assets inside the `Assets` folder:
-
 ```markdown
 # Multi-Container Wazuh SIEM Deployment & Troubleshooting Guide
 
