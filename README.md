@@ -1,4 +1,3 @@
-``markdown
 # Multi-Container Wazuh SIEM Deployment & Troubleshooting Guide
 
 A comprehensive guide documenting the end-to-end deployment of a single-node Wazuh SIEM stack on Kali Linux via Docker Compose. This document walks through diagnosing system dependency issues, adjusting kernel constraints, correcting JVM security manager certificate permission locks, and achieving a successful deployment.
