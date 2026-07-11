@@ -63,10 +63,11 @@ dependency failed to start: container single-node-wazuh.indexer is unhealthy
 * **Status:** Operational / Healthy ✅
 * **Context:** Executed a system cache volume purge (`down -v`), adjusted host kernel map counts, locked Git trees to release tags, and enforced strict `1000:1000` owner access configurations directly into the local persistent volume spaces.
 
-![Wazuh Stack Container Health](./Assets/complete.png)
 ![Wazuh Successful Dashboard Login](./Assets/dashboard.png)
 
+![Wazuh Stack Container Health](./Assets/complete.png)
 
+![Repository Setup](./Assets/wazuhweb.png)
 ```
 
 [+] Running 4/4
@@ -116,8 +117,6 @@ sudo chmod -R 750 config/
 ```
 
 ### 4. Deploy Isolated Stack Cleanly
-
-![Repository Setup](./Assets/wazuhweb.png)
 
 ```bash
 # Clear any remaining volume cache footprints and launch
