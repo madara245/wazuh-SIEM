@@ -1,3 +1,5 @@
+Here is your updated `README.md` block using the clean, new filenames. It maps them in order from the initial local installation attempts to the final operational Docker architecture, matching the `.png` extension inside your `Assets` folder exactly as requested.
+
 ```markdown
 # Multi-Container Wazuh SIEM Deployment & Troubleshooting Guide
 
@@ -13,10 +15,10 @@ The following sequential log tracks the development roadmap from initial install
 * **Status:** Failed ❌
 * **Context:** Attempted to install components locally alongside browser documentation, leading to socket connectivity blocks due to systemctl control layer failures.
 
-![Repository Setup](./Assets/Screenshot_2026-07-11_16_05_42.png)
-![GPG Key Verification Errors](./Assets/Screenshot_2026-07-11_16_06_47.png)
-![Package Manager Updates](./Assets/Screenshot_2026-07-11_16_38_18.png)
-![Connection Refused Error](./Assets/Screenshot_2026-07-11_17_05_25.png)
+![Repository Setup](./Assets/wazuhweb.png)
+![GPG Key Verification](./Assets/keys.png)
+![Package Manager Install](./Assets/install.png)
+![Connection Refused State](./Assets/dasheneg.png)
 
 
 ```
@@ -31,8 +33,8 @@ The following sequential log tracks the development roadmap from initial install
 * **Status:** Failed ❌
 * **Context:** Checking system engine initial states. The database indexer cluster logs exposed an immediate crash during the bootstrap phase because the security plugin could not read or locate the cryptographic assets.
 
-![Systemctl Unit Failure States](./Assets/Screenshot_2026-07-11_17_07_44.png)
-![Stack Trace Breakdown](./Assets/Screenshot_2026-07-11_17_08_01.png)
+![Systemctl Unit Failure States](./Assets/error.png)
+![Stack Trace Breakdown](./Assets/logs.png)
 
 
 ```
@@ -48,8 +50,8 @@ Caused by: org.opensearch.OpenSearchException: Unable to read the file /etc/wazu
 * **Status:** Failed ❌
 * **Context:** Migrated the architecture to Docker Compose to ensure isolation. The environment encountered a secondary bottleneck: the Linux kernel virtual memory allocation parameters (`vm.max_map_count`) were restricted below OpenSearch operational minimums, while active volume caches locked in bad certificate paths.
 
-![Docker Engine Runtime Checks](./Assets/Screenshot_2026-07-11_17_18_24.png)
-![Unhealthy Multi-Container Loop](./Assets/Screenshot_2026-07-11_17_44_38.png)
+![Docker Engine Runtime Checks](./Assets/dockeractive.png)
+![Unhealthy Multi-Container Loop](./Assets/composing.png)
 
 
 ```
@@ -65,7 +67,8 @@ dependency failed to start: container single-node-wazuh.indexer is unhealthy
 * **Status:** Operational / Healthy ✅
 * **Context:** Executed a system cache volume purge (`down -v`), adjusted host kernel map counts, locked Git trees to release tags, and enforced strict `1000:1000` owner access configurations directly into the local persistent volume spaces.
 
-![Wazuh Successful Dashboard Login](./Assets/Screenshot_2026-07-11_18_52_10.png)
+![Wazuh Stack Container Health](./Assets/complete.png)
+![Wazuh Successful Dashboard Login](./Assets/dashboard.png)
 
 
 ```
