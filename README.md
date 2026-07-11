@@ -12,7 +12,6 @@ The following sequential log tracks the development roadmap from initial install
 * **Status:** Failed ❌
 * **Context:** Attempted to install components locally alongside browser documentation, leading to socket connectivity blocks due to systemctl control layer failures.
 
-![Repository Setup](./Assets/wazuhweb.png)
 ![GPG Key Verification](./Assets/keys.png)
 ![Package Manager Install](./Assets/install.png)
 ![Connection Refused State](./Assets/dasheneg.png)
@@ -117,6 +116,8 @@ sudo chmod -R 750 config/
 ```
 
 ### 4. Deploy Isolated Stack Cleanly
+
+![Repository Setup](./Assets/wazuhweb.png)
 
 ```bash
 # Clear any remaining volume cache footprints and launch
