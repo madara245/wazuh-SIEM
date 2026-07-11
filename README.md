@@ -1,5 +1,3 @@
-
-
 ```markdown
 # Multi-Container Wazuh SIEM Deployment & Troubleshooting Guide
 
